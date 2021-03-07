@@ -56,6 +56,13 @@ img {
     padding-right: 15px;
     display: flex;
 }
+.section {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .logo {
     width: 145px;
     height: 31px;
@@ -280,8 +287,24 @@ img {
 /*===========End Our team================ */
 
 /*===========Work gallery================ */
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-set {
+    display: flex;
+    flex-wrap:nowrap;
+    align-items: center;
+    padding-top: 100px;
+    padding-left: 517px;
+    padding-right: 516px;
+    margin-bottom: 56px;
+}
+.main-set:not(:last-child) {
+    padding-right: 30px;
+}
 .buttom-bg {
-    background: var(--standart-color)
+    background: var(--standart-color);
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
@@ -294,13 +317,15 @@ img {
     letter-spacing: 0.03em;
     cursor: pointer;
     color: var(--main-text-color);
-    background-color: var(--team-bg-color)
+    background-color: var(--team-bg-color);
     border-radius: 4px;
+    display: flex;
+    flex-direction: row;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     background-color: var(--focus-color );
-    color: var(--standart-color)
+    color: var(--standart-color);
 }
 .work1 {
     width: 370px;
@@ -365,13 +390,7 @@ img {
 /*===========Work gallery================ */
 
 /*===========Advantages section================ */
-.section {
-    width: 1200px;
-    display: flex;
-    margin: 0 auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+
 .adv-set {
     display: flex;
     flex-wrap:nowrap;
