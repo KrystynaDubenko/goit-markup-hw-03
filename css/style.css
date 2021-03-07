@@ -32,7 +32,7 @@ img {
 .link {
     text-decoration: none;
 }
-.list {
+.list-all {
     list-style: none;
 }
 .address {
@@ -54,6 +54,7 @@ img {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    display: flex;
 }
 .logo {
     width: 145px;
@@ -69,14 +70,18 @@ img {
 .logo-dark-theme {
     top: 2157px;
     color: var(--standart-color)
+    margin-bottom: 20px;
 }
 .logo-light-theme {
     top: 24px;
     color:var(--main-text-color);
+    margin-right: 93px;
 }
 /*===========Header================ */
 .header {
-
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border: 1px solid #ECECEC;
 }
 .header .container {
     display: flex;
@@ -89,6 +94,7 @@ img {
 .list {
     display: flex;
     align-items: center;
+    margin-left: auto;
 }
 .header-bg {
     background: var(--standart-color)
@@ -100,6 +106,9 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--main-text-color);
+}
+.navigation-item:not(:last-child) {
+    padding-right: 50px;
 }
 .contact-link {
     color: var(--secondary-text-color)
@@ -124,7 +133,12 @@ img {
 
 /*===========Hero================ */
 .hero-bg {
-    background: var(--footer-bg-color)
+    background: var(--footer-bg-color);
+    padding-bottom: 200px;
+}
+.hero-container {
+    width: 1200px;
+    margin: 0 auto;
 }
 .hero-title {
     font-family: var(--main-font);
@@ -134,26 +148,47 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--standart-color)
+    color: var(--standart-color);
+    display: flex;
+    align-items: center;
+    padding-top: 200px;
+    padding-right: 452px;
+    padding-left: 452px;
+    padding-bottom: 30px;
     }
 .main-button {
+    min-width: 200px;
     font-family: var(--main-font);
     font-weight: bold;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
+    display: block;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
-    color: var(--standart-color)
+    color: var(--standart-color);
     backgroun: var(--focus-color );
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    padding: 10px 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--focus-color);
 }
 /*===========End Hero================ */
 
 /*===========About================ */
+.about-container {
+    display: flex;
+    align-items: center;
+}
+.about-link:not(:last-child) {
+    padding-right: 30px;
+}
 .about1 {
     width: 370px;
     height: 294px;
@@ -173,6 +208,21 @@ img {
 /*===========End About================ */
 
 /*===========Our team================ */
+.team-container {
+    display: flex;
+    align-items: center;
+}
+.team-container {
+    display: flex;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: -30px;
+}
+.team-set {
+    margin-top: 50px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 120px)/4);
+}
 .our-team-bg {
     background-color: var(--team-bg-color)
 }
@@ -184,6 +234,8 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .job-position {
     font-family: var(--main-font);
@@ -192,12 +244,12 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-bottom: 30px;
 }
 .card {
     width: 270px;
     height: 368px;
-    background: var(--standart-color)
-    /* material shadow v1 */
+    background: var(--standart-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -313,6 +365,24 @@ img {
 /*===========Work gallery================ */
 
 /*===========Advantages section================ */
+.section {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.adv-set {
+    display: flex;
+    flex-wrap:nowrap;
+    margin-top: -10px;
+    margin-left: -30px;
+}
+.advantage-items {
+    margin-top: 10px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 40px)/4);
+}
 .advantage-name {
     font-family: var(--main-font);
     font-weight: bold;
@@ -347,15 +417,24 @@ img {
     height: 252px;
     background: var(--footer-bg-color)
 }
+.footer {
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-bottom: 60px;
+    padding-right: 1154px;
+}
 .addres-font {
     font-style: normal;
+}
+.marg {
+    margin-bottom: 9px;
 }
 .physical-adress {
     font-family: var(--main-font);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--standart-color)
+    color: var(--standart-color);
 }
 .mail-adress {
     font-family: var(--main-font);
