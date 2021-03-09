@@ -56,7 +56,7 @@ img {
     padding-right: 15px;
     display: flex;
 }
-.section {
+section {
     width: 1200px;
     display: flex;
     margin: 0 auto;
@@ -88,7 +88,7 @@ img {
 .header {
     padding-top: 24px;
     padding-bottom: 25px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 .header .container {
     display: flex;
@@ -101,7 +101,6 @@ img {
 .list {
     display: flex;
     align-items: center;
-    margin-left: auto;
 }
 .header-bg {
     background: var(--standart-color)
@@ -113,9 +112,11 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--main-text-color);
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .navigation-item:not(:last-child) {
-    padding-right: 50px;
+    margin-right: 50px;
 }
 .contact-link {
     color: var(--secondary-text-color)
@@ -142,12 +143,14 @@ img {
 .hero-bg {
     background: var(--footer-bg-color);
     padding-bottom: 200px;
+    padding-top: 232px;
 }
 .hero-container {
     width: 1200px;
     margin: 0 auto;
 }
 .hero-title {
+    max-width: 696px;
     font-family: var(--main-font);
     font-weight: 900;
     font-size: 44px;
@@ -158,10 +161,7 @@ img {
     color: var(--standart-color);
     display: flex;
     align-items: center;
-    padding-top: 200px;
-    padding-right: 452px;
-    padding-left: 452px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     }
 .main-button {
     min-width: 200px;
@@ -418,13 +418,13 @@ img {
 .adv-set {
     display: flex;
     flex-wrap:nowrap;
-    margin-top: -10px;
+    margin-top: -30px;
     margin-left: -30px;
 }
 .advantage-items {
-    margin-top: 10px;
+    margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 40px)/4);
+    flex-basis: calc((100% - 120px)/4);
 }
 .advantage-name {
     font-family: var(--main-font);
@@ -434,6 +434,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
+    margin-bottom: 10px;
 }
 .advantage-explanation {
     font-family: var(--main-font);
@@ -452,6 +453,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin-bottom: 50px;
 }
 
 /*===========Footer================ */
