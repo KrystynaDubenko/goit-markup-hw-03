@@ -54,7 +54,6 @@ img {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    display: flex;
 }
 section {
     width: 1200px;
@@ -112,11 +111,14 @@ section {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--main-text-color);
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .navigation-item:not(:last-child) {
     margin-right: 50px;
+}
+.in-touch {
+    margin-left: auto;
 }
 .contact-link {
     color: var(--secondary-text-color)
@@ -143,13 +145,10 @@ section {
 .hero-bg {
     background: var(--footer-bg-color);
     padding-bottom: 200px;
-    padding-top: 232px;
-}
-.hero-container {
-    width: 1200px;
-    margin: 0 auto;
+    padding-top: 200px;
 }
 .hero-title {
+    margin: 0 auto;
     max-width: 696px;
     font-family: var(--main-font);
     font-weight: 900;
@@ -164,7 +163,6 @@ section {
     margin-bottom: 30px;
     }
 .main-button {
-    min-width: 200px;
     font-family: var(--main-font);
     font-weight: bold;
     font-size: 16px;
@@ -175,7 +173,7 @@ section {
     letter-spacing: 0.06em;
     cursor: pointer;
     color: var(--standart-color);
-    backgroun: var(--focus-color );
+    background: var(--focus-color );
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 32px;
@@ -194,23 +192,19 @@ section {
     align-items: center;
 }
 .about-link:not(:last-child) {
-    padding-right: 30px;
+    margin-right: 30px;
 }
 .about1 {
-    width: 370px;
-    height: 294px;
-    background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
-    mix-blend-mode: normal;
+    width: 100%;
+    height: 100%;
 }
 .about2 {
-    width: 370px;
-    height: 294px;
-    background: url(web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg);
+    width: 100%;
+    height: 100%;
     }
 .about3 {
-    width: 370px;
-    height: 294px;
-    background: url(creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg);
+    width: 100%;
+    height: 100%;
     }
 /*===========End About================ */
 
@@ -222,11 +216,9 @@ section {
 .team-container {
     display: flex;
     align-items: center;
-    margin-top: -50px;
     margin-left: -30px;
 }
 .team-set {
-    margin-top: 50px;
     margin-left: 30px;
     flex-basis: calc((100% - 120px)/4);
 }
@@ -241,12 +233,12 @@ section {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .team-description {
     padding-bottom: 30px;
     padding-top: 30px;
+
 }
 .job-position {
     font-family: var(--main-font);
@@ -255,11 +247,9 @@ section {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    margin-bottom: 30px;
 }
 .card {
     width: 270px;
-    height: 368px;
     background: var(--standart-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -414,7 +404,9 @@ section {
 /*===========Work gallery================ */
 
 /*===========Advantages section================ */
-
+.advantage {
+    padding-top: 94px;
+}
 .adv-set {
     display: flex;
     flex-wrap:nowrap;
