@@ -56,7 +56,6 @@ img {
     padding-right: 15px;
 }
 section {
-    width: 1200px;
     display: flex;
     margin: 0 auto;
     padding-top: 94px;
@@ -75,8 +74,7 @@ section {
     }
 .logo-dark-theme {
     top: 2157px;
-    color: var(--standart-color)
-    margin-bottom: 20px;
+    color: var(--standart-color);
 }
 .logo-light-theme {
     top: 24px;
@@ -102,7 +100,7 @@ section {
     align-items: center;
 }
 .header-bg {
-    background: var(--standart-color)
+    background: var(--standart-color);
 }
 .header-link {
     font-family: var(--main-font);
@@ -117,16 +115,21 @@ section {
 .navigation-item:not(:last-child) {
     margin-right: 50px;
 }
+.secondary {
+    margin-left: 331px;
+}
+.navigation-item-secondary:not(:last-child) {
+    margin-right: 50px;
+}
 .in-touch {
     margin-left: auto;
 }
 .contact-link {
-    color: var(--secondary-text-color)
-    ;
+    color: var(--secondary-text-color);
 }
 .contact-link:hover,
 .contact-link:focus {
-    color:var(--focus-color ) ;
+    color:var(--focus-color );
 }
 
 .im-here:hover,
@@ -139,6 +142,7 @@ section {
 .current {
     color: var(--focus-color );
 }
+
 /*===========End Header================ */
 
 /*===========Hero================ */
@@ -187,6 +191,9 @@ section {
 /*===========End Hero================ */
 
 /*===========About================ */
+.cont {
+    padding-top: 0px;
+}
 .about-container {
     display: flex;
     align-items: center;
@@ -238,7 +245,8 @@ section {
 .team-description {
     padding-bottom: 30px;
     padding-top: 30px;
-
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .job-position {
     font-family: var(--main-font);
@@ -281,20 +289,14 @@ section {
 /*===========End Our team================ */
 
 /*===========Work gallery================ */
-.main-container {
-    width: 1200px;
-    margin: 0 auto;
-}
 .main-set {
     display: flex;
+    justify-content: center;
     flex-wrap:nowrap;
     align-items: center;
-    padding-top: 100px;
-    padding-left: 517px;
-    padding-right: 516px;
     margin-bottom: 56px;
 }
-.main-set:not(:last-child) {
+.main-items {
     padding-right: 30px;
 }
 .work-content-wrapper {
@@ -328,61 +330,60 @@ section {
 .works-set {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /*align-items: center;*/
+    align-items: flex-start;
     align-content: center;
     margin-top: -30px;
     margin-left: -30px;
 }
 .works-item {
     margin-top: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 90px) / 3);
-    margin-top: 30px;
     margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
 }
 .work1 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(portfolio1.jpg);
 }
 .work2 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(portfolio2.jpg);
 }
 .work3 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(portfolio-1.jpg);
 }
 .work4 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(portfolio-2.jpg);
 }
 .work5 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(portfolio5.jpg);
 }
 .work6 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(111.jpg);
 }
 .work7 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(portfolio7.jpg);
 }
 .work8 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(portfolio8.jpg);
 }
 .work9 {
-    width: 370px;
-    height: 294px;
+    width: 100%;
+    height: 100%;
     background: url(2910404.jpg);
 }
 
@@ -450,18 +451,15 @@ section {
 
 /*===========Footer================ */
 .footer-bg {
-    width: 1600px;
-    height: 252px;
     background: var(--footer-bg-color)
 }
 .footer {
     padding-top: 60px;
-    padding-left: 215px;
     padding-bottom: 60px;
-    padding-right: 1154px;
 }
 .addres-font {
     font-style: normal;
+    margin-top: 20px;
 }
 .marg {
     margin-bottom: 9px;
