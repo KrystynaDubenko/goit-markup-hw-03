@@ -294,14 +294,16 @@ section {
     justify-content: center;
     flex-wrap:nowrap;
     align-items: center;
-    margin-bottom: 56px;
+    margin-bottom: 50px;
 }
 .main-items {
-    padding-right: 30px;
+    margin-right: 8px;
 }
 .work-content-wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
 }
 .buttom-bg {
     background: var(--standart-color);
@@ -394,6 +396,7 @@ section {
     line-height: 2;
     letter-spacing: 0.06em;
     color:var(--main-text-color);
+    margin-bottom: 4px;
 }
 .project-explanation {
     font-family: var(--main-font);
